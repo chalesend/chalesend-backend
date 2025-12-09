@@ -1,0 +1,67 @@
+chalesend_backend/
+│
+├── app/
+│   ├── main.py
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── exceptions.py
+│   │
+│   ├── api/
+│   │   ├── v1/
+│   │   │   ├── auth.py
+│   │   │   ├── users.py
+│   │   │   ├── transactions.py
+│   │   │   ├── rates.py
+│   │   │   ├── banks.py
+│   │   │   ├── momo.py
+│   │   │   ├── profile.py
+│   │   │   ├── investments.py
+│   │   │   └── webhooks.py
+│   │   └── router.py
+│   │
+│   ├── services/
+│   │   ├── sendsprint_service.py
+│   │   ├── flutterwave_service.py
+│   │   ├── nium_service.py
+│   │   ├── kyc_service.py
+│   │   ├── risk_engine.py
+│   │   ├── investments_service.py
+│   │   └── notifications_service.py
+│   │
+│   ├── models/
+│   │   ├── user.py
+│   │   ├── transaction.py
+│   │   ├── recipient.py
+│   │   ├── rate_cache.py
+│   │   ├── bank_cache.py
+│   │   ├── momo_cache.py
+│   │   └── verification_request.py
+│   │
+│   ├── db/
+│   │   ├── session.py
+│   │   └── base.py
+│   │
+│   ├── utils/
+│   │   ├── logging.py
+│   │   ├── helpers.py
+│   │   ├── enums.py
+│   │   └── validators.py
+│   │
+│   └── schemas/
+│       ├── auth.py
+│       ├── transaction.py
+│       ├── user.py
+│       ├── profile.py
+│       ├── rates.py
+│       ├── banks.py
+│       └── investments.py
+│
+├── tests/
+│   ├── test_transactions.py
+│   ├── test_rates.py
+│   └── test_auth.py
+│
+├── requirements.txt
+├── README.md
+└── template_openapi.json
